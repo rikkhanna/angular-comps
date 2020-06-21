@@ -6,10 +6,11 @@ import { ElementsHomeComponent } from './elements-home/elements-home.component';
 import { PlaceholderComponent } from './placeholder/placeholder.component';
 import { TimesDirectiveDirective } from './times-directive.directive';
 import { SharedModule } from '../shared/shared.module';
+import { SegmentComponent } from './segment/segment.component';
 
 
 @NgModule({
-  declarations: [ElementsHomeComponent, PlaceholderComponent, TimesDirectiveDirective],
+  declarations: [ElementsHomeComponent, PlaceholderComponent, TimesDirectiveDirective, SegmentComponent],
   imports: [
     CommonModule,
     ElementsRoutingModule,
