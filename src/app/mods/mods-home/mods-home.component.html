@@ -1,3 +1,17 @@
 <app-divider>Modal Component</app-divider>
 <button (click)="onClick()" class="ui button">View Modal</button>
-<app-modal (close)="onClick()" *ngIf="modalOpen" ></app-modal>
+<app-modal (close)="onClick()" *ngIf="modalOpen" >
+    <div modalTitle>
+        Modal!
+    </div>
+    <p>Some content for modal window should go right here!</p>
+
+    <ng-container modalButton>
+        <button (click)="onClick()" class="ui button">
+            custom
+        </button>
+    </ng-container>
+</app-modal>
+
+<app-divider>Accordian Component</app-divider>
+<app-accordian [accordianItems]="accordianData"></app-accordian>
