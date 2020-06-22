@@ -11,7 +11,6 @@ export class ItemsComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
-    console.log(this.records);
   }
 
 }
